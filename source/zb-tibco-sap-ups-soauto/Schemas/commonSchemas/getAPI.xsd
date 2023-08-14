@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="getApi" type="getApiType"/>
+	<xs:complexType name="getApiType">
+		<xs:sequence>
+			<xs:element name="url" type="xs:string" minOccurs="0"/>
+			<xs:element name="authorization" type="xs:string" minOccurs="0"/>
+			<xs:element name="select" type="xs:string" minOccurs="0"/>
+			<xs:element name="expand" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

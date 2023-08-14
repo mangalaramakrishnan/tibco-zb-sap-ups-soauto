@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:id="http://www.tibco.com/ws/2013/11/identity" xmlns:jms="http://xsd.tns.tibco.com/bw/models/sharedresource/jms" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sca_ext="http://www.tibco.com/ns/sca/201311" xmlns:sslclient="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/sslclient" xmi:id="_Z65AET6_EeqtUuaQusof_A" name="com.zb.enterpriselibrary.sslJMS_TibcoCommon" type="jms:JMSConnectionFactory">
+  <identitySet xmi:id="_IQDb0GVoEeq3J64QQSLXrQ" appliesTo="namedResource" name="HttpClientIdentitySet" provides="confidentiality">
+    <sca_ext:intentMap xmi:id="_IQDb0WVoEeq3J64QQSLXrQ" provides="sca_ext:confidentiality">
+      <sca_ext:qualifier xmi:id="_IQDb0mVoEeq3J64QQSLXrQ" name="transport">
+        <id:IdentityReference xmi:id="_IQGfIGVoEeq3J64QQSLXrQ" URI="com.zb.enterpriselibrary.SSLClient" type="sslclient:SSLClientConfiguration"/>
+      </sca_ext:qualifier>
+    </sca_ext:intentMap>
+  </identitySet>
+  <jndi:reference xmi:id="_Z65nID6_EeqtUuaQusof_A" key="jndiConnectionJNDIName" type="jms:JNDIConnection" value="com.zb.enterpriselibrary.sslJNDI_TibcoCommon"/>
+  <jndi:configuration xsi:type="jms:JNDIConnectionFactory" xmi:id="_Z65nIT6_EeqtUuaQusof_A" factoryType="Queue/Topic">
+    <substitutionBindings xmi:id="_R9k9sD7fEeqTVa5QtfKuYQ" template="jndiName" propName="/JMS/sslJNDI_QueueConnectionFactory"/>
+    <substitutionBindings xmi:id="_xYzdsGSrEeqpjZ8pPFYa3A" template="topicFactoryJNDIName" propName="/JMS/sslJNDI_TopicConnectionFactory"/>
+    <userCredentials xmi:id="_ffCUYD7bEequFLf-iWaSBQ">
+      <substitutionBindings xmi:id="_f2ekAD7bEequFLf-iWaSBQ" template="username" propName="/JMS/JNDI_Username"/>
+      <substitutionBindings xmi:id="_hgwUgD7bEequFLf-iWaSBQ" template="password" propName="/JMS/JNDI_Password"/>
+    </userCredentials>
+  </jndi:configuration>
+</jndi:namedResource>

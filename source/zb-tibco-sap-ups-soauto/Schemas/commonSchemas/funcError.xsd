@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="http://zb.tibco.com/v1/namespace/funcError" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://zb.tibco.com/v1/namespace/funcError">
+  	
+  <xs:element name="funcError" type="funcErrorType"/>
+  	
+  <xs:complexType name="funcErrorType">
+    		
+    <xs:all>
+      			
+      <xs:element minOccurs="0" name="process" type="xs:string"/>
+      			
+      <xs:element minOccurs="0" name="errorCode" type="xs:string"/>
+      			
+      <xs:element minOccurs="0" name="erroMessage" type="xs:string"/>
+      			
+      <xs:element minOccurs="0" name="errorDetails" type="xs:string"/>
+      		
+    </xs:all>
+    	
+  </xs:complexType>
+  
+</xs:schema>

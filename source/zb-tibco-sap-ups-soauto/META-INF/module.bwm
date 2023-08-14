@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:sapconnection="http://ns.tibco.com/bw/sharedresource/sapconnection" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_RYXIkBWVEe6WIKTNUSGYWg" targetNamespace="http://tns.tibco.com/bw/composite/zb-tibco-sap-ups-soauto" name="zb-tibco-sap-ups-soauto" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_U079IBWVEe6WIKTNUSGYWg" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U1iaEBWVEe6WIKTNUSGYWg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U1y4wBWVEe6WIKTNUSGYWg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U2PksBWVEe6WIKTNUSGYWg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U2gDYBWVEe6WIKTNUSGYWg" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U2uF0BWVEe6WIKTNUSGYWg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U2_yoBWVEe6WIKTNUSGYWg" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U3TUoBWVEe6WIKTNUSGYWg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_U3jzUBWVEe6WIKTNUSGYWg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_V8Sb4BvZEe61q-f88J37KA" name="SAPSncMode" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8X7cBvZEe61q-f88J37KA" name="SAPSncQop" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8a-wBvZEe61q-f88J37KA" name="SAPSncMyname" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8lW0BvZEe61q-f88J37KA" name="SAPLogonGroup" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V85f4BvZEe61q-f88J37KA" name="SAPSncLib" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9Ma0BvZEe61q-f88J37KA" name="SAPUserName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9QsQBvZEe61q-f88J37KA" name="SAPClientOptions" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9U9sBvZEe61q-f88J37KA" name="SAPMsgServer" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9adQBvZEe61q-f88J37KA" name="SAPProgramID" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9eusBvZEe61q-f88J37KA" name="SAPPassword" type="property:password" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9hK8BvZEe61q-f88J37KA" name="SAPGatewayService" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9kOQBvZEe61q-f88J37KA" name="SAPSystemName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9lcYBvZEe61q-f88J37KA" name="SAPClient" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V917EBvZEe61q-f88J37KA" name="SAPGatewayHost" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V99P0BvZEe61q-f88J37KA" name="SAPSystemNumber" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9_sEBvZEe61q-f88J37KA" name="SAPServerOptions" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V-Hn4BvZEe61q-f88J37KA" name="SAPAppServer" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V-NugBvZEe61q-f88J37KA" name="SAPSncPartnername" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_gpAKECFnEe633OzjRBbBng" name="sapConnectionProperty" type="sapconnection:SAPConnection" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_yW5vMCFnEe633OzjRBbBng" name="sapConnectionProperty1" type="sapconnection:SAPConnection" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V7-S0BvZEe61q-f88J37KA" name="/JMS/iDocConfirmationQueue" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9IJYBvZEe61q-f88J37KA" name="/JMS/iDocListenerQueue" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8ID0BvZEe61q-f88J37KA" name="/HTTP/HOST" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8jhoBvZEe61q-f88J37KA" name="/HTTP/Method" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8tSoBvZEe61q-f88J37KA" name="/HTTP/URI" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9q78BvZEe61q-f88J37KA" name="/HTTP/PORT" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_OAsfACITEe633OzjRBbBng" name="/HTTP/OAuth_Configuration/Client-ID" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_UX2OUCITEe633OzjRBbBng" name="/HTTP/OAuth_Configuration/Client_Secret" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8LHIBvZEe61q-f88J37KA" name="/SAP/SAPSncLib" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8OxgBvZEe61q-f88J37KA" name="/SAP/SAPGatewayHost" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8VfMBvZEe61q-f88J37KA" name="/SAP/SAPUserName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8epIBvZEe61q-f88J37KA" name="/SAP/SAPSncMyname" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8geUBvZEe61q-f88J37KA" name="/SAP/SAPGatewayService" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8nzEBvZEe61q-f88J37KA" name="/SAP/SAPClient" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8q2YBvZEe61q-f88J37KA" name="/SAP/SAPClientOptions" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8vu4BvZEe61q-f88J37KA" name="/SAP/SAPProgramID" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9BbsBvZEe61q-f88J37KA" name="/SAP/SAPLogonGroup" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9FtIBvZEe61q-f88J37KA" name="/SAP/SAPServerOptions" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9KloBvZEe61q-f88J37KA" name="/SAP/SAPSncPartnername" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9Wy4BvZEe61q-f88J37KA" name="/SAP/SAPSncQop" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9mqgBvZEe61q-f88J37KA" name="/SAP/SAPSncMode" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9ofsBvZEe61q-f88J37KA" name="/SAP/SAPSystemNumber" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9sxIBvZEe61q-f88J37KA" name="/SAP/SAPSystemName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V95lcBvZEe61q-f88J37KA" name="/SAP/SAPMsgServer" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V-BhQBvZEe61q-f88J37KA" name="/SAP/SAPPassword" type="property:password" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V-FLoBvZEe61q-f88J37KA" name="/SAP/SAPAppServer" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8cz8BvZEe61q-f88J37KA" name="/Response/MESTYP" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V89KQBvZEe61q-f88J37KA" name="/Response/SNDPOR" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9OQABvZEe61q-f88J37KA" name="/Response/STDMES" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9TIgBvZEe61q-f88J37KA" name="/Response/TSSPRAS" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9ZPIBvZEe61q-f88J37KA" name="/Response/RCVPOR" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9f80BvZEe61q-f88J37KA" name="/Response/RCVPRN" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9vNYBvZEe61q-f88J37KA" name="/Response/SNDPRT" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9xCkBvZEe61q-f88J37KA" name="/Response/TDID" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V93JMBvZEe61q-f88J37KA" name="/Response/SNDPRN" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V-DWcBvZEe61q-f88J37KA" name="/Response/TSSPRAS_ISO" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V-JdEBvZEe61q-f88J37KA" name="/Response/RCVPRT" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V-L5UBvZEe61q-f88J37KA" name="/Response/IDOCTYP" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8-_cBvZEe61q-f88J37KA" name="/Logging/InterfaceID" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V90s8BvZEe61q-f88J37KA" name="/Logging/TransactionDomain" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V8yLIBvZEe61q-f88J37KA" name="/Logging/transactionType/ORDER_CONFIRMATION" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9pt0BvZEe61q-f88J37KA" name="/Logging/transactionType/ORDER_REQUEST" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V98BsBvZEe61q-f88J37KA" name="/Logging/transactionType/ORDER_PROCESS" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V81OcBvZEe61q-f88J37KA" name="/IdentityProvider/Password" type="property:password" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9dgkBvZEe61q-f88J37KA" name="/IdentityProvider/UserName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V82ckBvZEe61q-f88J37KA" name="/Mail/CCMail" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9brYBvZEe61q-f88J37KA" name="/Mail/FromMail" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9iZEBvZEe61q-f88J37KA" name="/Mail/ToMail" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9y3wBvZEe61q-f88J37KA" name="/Mail/Environment" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V9D38BvZEe61q-f88J37KA" name="/Keystore/keystorepassword" type="property:password" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_V94XUBvZEe61q-f88J37KA" name="/Keystore/certs" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_PiAqACrVEe6gA6t_KaOdAw" name="/UPS/Username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_dF5s0CrVEe6gA6t_KaOdAw" name="/UPS/Password" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_dUW_kCrVEe6gA6t_KaOdAw" name="/UPS/grant_type" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_rgS50CrVEe6gA6t_KaOdAw" name="/UPS/Resource_path" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_4gFJ0C-SEe6OzcYWVdF-3Q" name="ComponentIDOC_Parser_Process" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_4gG_AC-SEe6OzcYWVdF-3Q" processName="zb-tibco-sap-ups-soauto.IDOC_Parser_Process"/>
+  </sca:component>
+  <sca:component xmi:id="_5C90cC-SEe6OzcYWVdF-3Q" name="ComponentIdocConfirmation" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_5C90cS-SEe6OzcYWVdF-3Q" processName="zb-tibco-sap-ups-soauto.IdocConfirmation"/>
+  </sca:component>
+  <sca:component xmi:id="_5a7ogC-SEe6OzcYWVdF-3Q" name="ComponentIdocReceiver" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_5a7ogS-SEe6OzcYWVdF-3Q" processName="zb-tibco-sap-ups-soauto.IdocReceiver"/>
+  </sca:component>
+</sca:composite>

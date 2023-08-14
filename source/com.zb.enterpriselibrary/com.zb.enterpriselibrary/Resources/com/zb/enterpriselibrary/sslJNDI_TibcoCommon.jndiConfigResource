@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jms="http://xsd.tns.tibco.com/bw/models/sharedresource/jms" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_Rq_aUWVqEeq3J64QQSLXrQ" name="com.zb.enterpriselibrary.sslJNDI_TibcoCommon" type="jms:JNDIConnection">
+  <jndi:configuration xsi:type="jms:JNDIConnectionConfiguration" xmi:id="_RrABYGVqEeq3J64QQSLXrQ">
+    <substitutionBindings xmi:id="_Ol-7wGVrEeq3J64QQSLXrQ" template="providerUrl" propName="/JMS/sslJNDI_URL"/>
+    <userCredentials xmi:id="_UqZVQGVrEeq3J64QQSLXrQ">
+      <substitutionBindings xmi:id="_VMptwGVrEeq3J64QQSLXrQ" template="username" propName="/JMS/JNDI_Username"/>
+      <substitutionBindings xmi:id="_XsOukGVrEeq3J64QQSLXrQ" template="password" propName="/JMS/JNDI_Password"/>
+    </userCredentials>
+  </jndi:configuration>
+</jndi:namedResource>

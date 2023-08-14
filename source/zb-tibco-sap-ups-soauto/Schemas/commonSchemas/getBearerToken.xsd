@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="get" type="getType"/>
+	<xs:complexType name="getType">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="host" type="xs:string"/>
+      		<xs:element minOccurs="0" name="authorization" type="xs:string"/>
+      		<xs:element minOccurs="0" name="requestUri" type="xs:string"/>
+      		<xs:element minOccurs="0" name="query" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
+    		
+   

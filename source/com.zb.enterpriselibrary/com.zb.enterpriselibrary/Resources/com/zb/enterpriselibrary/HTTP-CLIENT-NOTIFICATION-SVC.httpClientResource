@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_DXM_gb9aEeqOeJ7qXy15pA" name="com.zb.enterpriselibrary.HTTP-CLIENT-NOTIFICATION-SVC" type="http:HttpClientConfiguration">
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_DXNmkL9aEeqOeJ7qXy15pA" httpClientVersion="httpcomponents" retryCount="3" idleConnectionTimeout="3000" cmdExecutionIsolationStrategy="THREAD" cmdExecutionIsolationTimeout="1000" cmdExecutionTimeoutEnabled="true" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="20" cmdCircuitBreakerSleepWindow="5000" cmdCircuitBreakerErrorThresholdPercentage="50" cmdMetricsRollingStatsTime="10000" cmdMetricsRollingStatsNumBuckets="10" cmdMetricsHealthSnapshotInterval="500" cmdRequestLogEnabled="true" tpCoreSize="10" tpMaxQueueSize="-1" tpQueueSizeRejectionThreshold="5" tpKeepAliveTime="1">
+    <tcpDetails xmi:id="_DXNmkb9aEeqOeJ7qXy15pA">
+      <substitutionBindings xmi:id="_TuBc8L9aEeqOeJ7qXy15pA" template="host" propName="/NotificationSVC/host"/>
+      <substitutionBindings xmi:id="_VRBgwL9aEeqOeJ7qXy15pA" template="port" propName="/NotificationSVC/post"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>

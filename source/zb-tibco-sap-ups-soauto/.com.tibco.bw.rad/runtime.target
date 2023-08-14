@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.6"?>
+
+<target name="bw-runtime">
+<locations>
+
+<location path="/C:/New folder (2)/TIBCO_BW_6/bw/6.8/config/drivers/shells/jdbc.oracle.runtime//hotfix/runtime/plugins" type="Directory"/>
+<location path="/C:/New folder (2)/TIBCO_BW_6/bw/6.8/config/drivers/shells/jdbc.oracle.runtime//runtime/plugins" type="Directory"/>
+<location path="/C:/New folder (2)/TIBCO_BW_6/bw/palettes/sap/8.6//hotfix/runtime/plugins" type="Directory"/>
+<location path="/C:/New folder (2)/TIBCO_BW_6/bw/palettes/sap/8.6//runtime/plugins" type="Directory"/>
+<location path="/C:/New folder (2)/TIBCO_BW_6/bw/palettes/sp/6.1//hotfix/runtime/plugins" type="Directory"/>
+<location path="/C:/New folder (2)/TIBCO_BW_6/bw/palettes/sp/6.1//runtime/plugins" type="Directory"/>
+
+
+<location path="C:/New folder (2)/TIBCO_BW_6/bw/6.8/system/hotfix/lib/common" type="Directory"/>
+<location path="C:/New folder (2)/TIBCO_BW_6/bw/6.8/system/lib/common" type="Directory"/>
+
+<location path="C:/New folder (2)/TIBCO_BW_6/bw/6.8/system/hotfix/palettes" type="Directory"/>
+<location path="C:/New folder (2)/TIBCO_BW_6/bw/6.8/system/palettes" type="Directory"/>
+
+<location path="C:/New folder (2)/TIBCO_BW_6/bw/6.8/system/hotfix/shared" type="Directory"/>
+<location path="C:/New folder (2)/TIBCO_BW_6/bw/6.8/system/shared" type="Profile"/>
+</locations>
+</target>

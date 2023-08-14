@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="postApi" type="postApiType"/>
+	<xs:complexType name="postApiType">
+		<xs:sequence>
+			<xs:element name="host" type="xs:string" minOccurs="0"/>
+			<xs:element name="port" type="xs:string" minOccurs="0"/>
+			<xs:element name="uri" type="xs:string" minOccurs="0"/>
+			<xs:element name="postdata" type="xs:string" minOccurs="0"/>
+			<xs:element name="content-type" type="xs:string" minOccurs="0"/>
+			<xs:element name="method" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

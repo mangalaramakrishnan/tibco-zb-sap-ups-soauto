@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsv:DocumentRoot xmlns:jsv="http://tns.tibco.com/bw/model/core/jobSV">
+  <jobSharedVariables>
+    <jobSharedVariable name="CLEHeader" type="{http://www.tibco.com/CommonLE/Client/Schema/ClientInterface.xsd}Header" initialValueMode="none"/>
+    <jobSharedVariable name="LogLevelControl" type="{http://www.tibco.com/CommonLE2/namespace/Public/CLEExtension/LogLevelControl.xsd}LogLevelState" initialValueMode="none"/>
+  </jobSharedVariables>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.tibco.com/CommonLE/Client/Schema/ClientInterface.xsd" location="../Schemas/ClientInterface.xsd"/>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.tibco.com/CommonLE2/namespace/Public/CLEExtension/LogLevelControl.xsd" location="../Schemas/LogLevelControl.xsd"/>
+</jsv:DocumentRoot>

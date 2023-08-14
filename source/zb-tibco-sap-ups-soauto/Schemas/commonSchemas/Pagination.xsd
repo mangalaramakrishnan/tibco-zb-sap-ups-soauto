@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://www.example.com/namespaces/tns/1686062391975" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.example.com/namespaces/tns/1686062391975">
+    
+  <xsd:element name="root">
+        
+    <xsd:complexType>
+            
+      <xsd:sequence>
+                
+        <xsd:element maxOccurs="1" minOccurs="0" name="skip" type="xsd:string"/>
+                
+        <xsd:element maxOccurs="1" minOccurs="0" name="requestUri" type="xsd:string"/>
+              
+      </xsd:sequence>
+          
+    </xsd:complexType>
+      
+  </xsd:element>
+  
+</xsd:schema>

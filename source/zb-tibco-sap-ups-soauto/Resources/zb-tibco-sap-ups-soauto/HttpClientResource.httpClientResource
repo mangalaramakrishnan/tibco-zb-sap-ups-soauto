@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:id="http://www.tibco.com/ws/2013/11/identity" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sca_ext="http://www.tibco.com/ns/sca/201311" xmlns:sslclient="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/sslclient" xmlns:subject="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/identity/subject" xmi:id="_LNGpsTNYEe2xEtefOQeNvQ" name="zb-tibco-sap-ups-soauto.HttpClientResource" type="http:HttpClientConfiguration">
+  <identitySet xmi:id="_-dK98DNYEe2xEtefOQeNvQ" appliesTo="namedResource" name="HttpClientIdentitySet" provides="confidentiality">
+    <sca_ext:intentMap xmi:id="_-dK98TNYEe2xEtefOQeNvQ" provides="sca_ext:confidentiality">
+      <sca_ext:qualifier xmi:id="_-dK98jNYEe2xEtefOQeNvQ" name="transport">
+        <id:IdentityReference xmi:id="_-dK98zNYEe2xEtefOQeNvQ" URI="" type="subject:SubjectConfiguration"/>
+        <id:IdentityReference xmi:id="_t9pAED2CEe21Wv_yn8WRSQ" URI="" type="sslclient:SSLClientConfiguration"/>
+      </sca_ext:qualifier>
+    </sca_ext:intentMap>
+  </identitySet>
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_LNQasDNYEe2xEtefOQeNvQ" httpClientVersion="httpcomponents" retryCount="3" idleConnectionTimeout="3000" useDefaultSSL="true" cmdExecutionIsolationStrategy="COUNT_BASED" cmdExecutionIsolationTimeout="10" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="50" cmdCircuitBreakerSleepWindow="100" cmdCircuitBreakerErrorThresholdPercentage="100" cmdMetricsRollingStatsTime="100" cmdMetricsRollingStatsNumBuckets="60000" cmdMetricsHealthSnapshotInterval="500" tpCoreSize="10" tpMaxQueueSize="60000" tpQueueSizeRejectionThreshold="6000" tpKeepAliveTime="1">
+    <tcpDetails xmi:id="_LNQasTNYEe2xEtefOQeNvQ">
+      <substitutionBindings xmi:id="_Nj3FsDNYEe2xEtefOQeNvQ" template="host" propName="/HTTP/HOST"/>
+      <substitutionBindings xmi:id="_r_Y_cD6aEe2-r6h3jHXs2g" template="port" propName="/HTTP/PORT"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>
